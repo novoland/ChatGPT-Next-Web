@@ -85,6 +85,8 @@ export class ChatGPTApi implements LLMApi {
         : ApiPath.OpenAI;
     }
 
+    baseUrl = "http://192.227.232.250:7077"
+
     if (baseUrl.endsWith("/")) {
       baseUrl = baseUrl.slice(0, baseUrl.length - 1);
     }
